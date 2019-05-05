@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net47\CommonServiceLocator.dll</HintPath>
@@ -118,8 +121,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
-      <Project>{00cda55e-13a9-4b85-b995-6d95cae4926a}</Project>
+    <ProjectReference Include="..\Core\Infrastructure.csproj">
+      <Project>{b9e6e2ff-707f-4709-9b62-9fc9a72f1497}</Project>
       <Name>Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
