@@ -3,9 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
+        mc:Ignorable="d" xmlns:prism="http://www.codeplex.com/prism"
+        xmlns:constants="clr-namespace:Infrastructure.Constants;assembly=Infrastructure"
         Title="Shell" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="Hello World!"/>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Row="0" prism:RegionManager.RegionName="{x:Static constants:RegionNames.MENU_REGION}"></ContentControl>
+        <ContentControl Grid.Row="1" prism:RegionManager.RegionName="{x:Static constants:RegionNames.SHELL_TOP_REGION}"></ContentControl>
+        <ContentControl Grid.Row="2" prism:RegionManager.RegionName="{x:Static constants:RegionNames.SHELL_MIDDLE_REGION}"></ContentControl>
+        <ContentControl Grid.Row="3" prism:RegionManager.RegionName="{x:Static constants:RegionNames.SHELL_BOTTOM_REGION}"></ContentControl>
     </Grid>
 </Window>
