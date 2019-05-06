@@ -1,4 +1,6 @@
-﻿using Prism.Ioc;
+﻿using NavigationMenu;
+using Prism.Ioc;
+using Prism.Modularity;
 using System.Windows;
 
 namespace WpfApp1
@@ -20,6 +22,11 @@ namespace WpfApp1
 
             //register a custom window host
             //containerRegistry.RegisterDialogWindow<CustomDialogWindow>();
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<NavigationMenuModule>();
         }
     }
 }
