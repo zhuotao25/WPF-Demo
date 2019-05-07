@@ -92,9 +92,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="WcfDataService1.svc.cs">
-      <DependentUpon>WcfDataService1.svc</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -118,7 +115,6 @@
       <DependentUpon>StudentDataModel.edmx</DependentUpon>
       <LastGenOutput>StudentDataModel.cs</LastGenOutput>
     </Content>
-    <Content Include="WcfDataService1.svc" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

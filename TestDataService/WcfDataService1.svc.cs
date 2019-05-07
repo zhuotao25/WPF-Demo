@@ -12,7 +12,7 @@ using System.Linq;
 using System.ServiceModel.Web;
 using System.Web;
 
-namespace EF
+namespace TestDataService
 {
     public class WcfDataService1 : EntityFrameworkDataService<TestEntities>
     {

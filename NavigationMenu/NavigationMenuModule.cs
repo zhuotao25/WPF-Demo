@@ -13,6 +13,8 @@ namespace NavigationMenu
         {
             IRegionManager regionManager = containerProvider.Resolve<IRegionManager>();
             regionManager.RegisterViewWithRegion(RegionNames.MENU_REGION, typeof(NavigationMenu));
+
+            NavigationMenuViewModel viewModel = new NavigationMenuViewModel();
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
